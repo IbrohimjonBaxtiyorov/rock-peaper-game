@@ -8584,12 +8584,16 @@ video {
   margin-right: auto;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .box-border {
@@ -8696,6 +8700,14 @@ video {
   height: 1rem;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[700px\] {
+  width: 700px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -8714,6 +8726,10 @@ video {
 
 .max-w-\[476px\] {
   max-width: 476px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 
 .flex-shrink {
@@ -9238,6 +9254,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-20 {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
@@ -9571,8 +9591,16 @@ video {
   border-radius: var(--radius-field);
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-selector {
   border-radius: var(--radius-selector);
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-b {
@@ -9749,6 +9777,10 @@ video {
   border-width: 1px;
 }
 
+.border-\[3px\] {
+  border-width: 3px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -9805,6 +9837,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.bg-\[\#F3F3F3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -9940,6 +9977,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -9953,6 +9994,16 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .text-left {
@@ -10011,8 +10062,16 @@ video {
   vertical-align: super;
 }
 
+.text-\[64px\] {
+  font-size: 64px;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -10083,8 +10142,18 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.text-\[\#2A45C2\] {
+  --tw-text-opacity: 1;
+  color: rgb(42 69 194 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-\[\#565468\] {
+  --tw-text-opacity: 1;
+  color: rgb(86 84 104 / var(--tw-text-opacity, 1));
 }
 
 .text-blue-500 {
