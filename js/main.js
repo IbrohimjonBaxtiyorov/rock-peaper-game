@@ -7,12 +7,11 @@ import { uiChanger } from "./ui-changer.js";
 
 elHand.forEach((element)=>{
     element.addEventListener("click",(e)=>{
-       uiChanger(e.target.src)
+       uiChanger(e.target.alt)
        sectionSwapper(true)
     })
 })
 
 elRefresh.addEventListener("click", ()=>{
-
     refreshGame()
 })
