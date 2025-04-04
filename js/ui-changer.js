@@ -1,23 +1,33 @@
 import { findWinner } from "./find-winner.js";
-import { elRobot, elStatus, elUser } from "./html-elements.js";
+import { elRobot, elScore, elStatus, elUser } from "./html-elements.js";
 import { robotChooser } from "./robot-chooser.js";
 
 export function uiChanger(variant){
     elUser.src =`./img/${variant}.svg`;
+
     setTimeout(()=>{
         const robot=robotChooser()
         elRobot.src=`./img/${robot}.svg`;
+
         const winner=findWinner(variant ,robot);
-      
+        let count=parseInt(sessionStorage.getItem('count'))||0;
+     
         if(winner==='tied'){
             elStatus.innerText="TIED"
         }else if(winner==='user'){
             elStatus.innerText="YOU WIN"
-            elUser.classList.add("shadow-blur", "duration-300", "rounded-full");
-        }else{
+             count++  }
+        else{
             elStatus.innerText="YOU LOSE"
-            elRobot.classList.add("shadow-blur", "duration-300", "rounded-full");
+            if(count >= 1){
+                count--;
+            }else{
+                count
+            }
+           
         }
+        elScore.innerText=count;
+        sessionStorage.setItem("count" ,count)
 
     },1000)
 }
