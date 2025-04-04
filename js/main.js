@@ -2,6 +2,7 @@ import {
   elGameZone,
   elGameZoneInner,
   elHand,
+  elLogo,
   elModeChanger,
   elRefresh,
   elRules,
@@ -30,10 +31,12 @@ elModeChanger.addEventListener("click", () => {
   if (mode === "simple") {
     elGameZoneInner.dataset.mode = "advanced";
     elRulesImage.src = "../img/rule-advanced.svg";
+    elLogo.src ="../img/advanced-logo.svg"
     elModeChanger.innerText = "Simple";
   } else if (mode === "advanced") {
     elGameZoneInner.dataset.mode = "simple";
     elRulesImage.src = "../img/rule-basic.svg";
+     elLogo.src ="../img/logo.svg.svg"
     elModeChanger.innerText = "Advanced";
   } else {
     elGameZoneInner.dataset.mode = "simple";

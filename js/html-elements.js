@@ -11,6 +11,7 @@ const elGameZoneInner = document.getElementById("gameZoneInner");
 const elRules = document.getElementById("rules");
 const elRulesModal = document.getElementById("rulesModal");
 const elRulesImage = document.getElementById("ruleImage");
+const elLogo = document.getElementById("logo");
 
 export {
   elGameZone,
@@ -25,5 +26,6 @@ export {
   elGameZoneInner,
   elRules,
   elRulesModal,
-  elRulesImage
+  elRulesImage,
+  elLogo,
 };
