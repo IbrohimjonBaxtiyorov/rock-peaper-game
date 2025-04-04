@@ -8740,10 +8740,6 @@ video {
   width: 400px;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -8770,6 +8766,10 @@ video {
 
 .max-w-\[700px\] {
   max-width: 700px;
+}
+
+.max-w-\[\] {
+  max-width: ;
 }
 
 .flex-shrink {
