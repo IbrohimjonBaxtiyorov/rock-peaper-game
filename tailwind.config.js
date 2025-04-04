@@ -11,9 +11,8 @@ module.exports = {
       },
       gradientColorStops:{
         'stop':"#131537"
-      }
-    },
+    }
   },
   plugins: [require('daisyui'),],
 }
-
+}

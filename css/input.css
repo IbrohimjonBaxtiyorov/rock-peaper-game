@@ -65,5 +65,30 @@
         @apply w-[145px] h-[148px]
       }
    
-  
+   @media only screen and (max-width:600px){
+    .js-hand{
+        width: 130px;
+        height: 130px;
+    }
+    #css-tringle{
+        background-image: url(../img/bg-phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div[data-mode="simple"] {
+       background-image: none;
+    }
+    div[data-mode="simple"]>ul>li:nth-child(1){
+        @apply place-self-end
+    }
+    div[data-mode="simple"]>ul>li:nth-child(3){
+        @apply mb-10
+    }
+    div[data-mode="advanced"] > #css-tringle{
+       background-image: none;
+    }
+    div[data-mode="advanced"] > .js-hand{
+      @apply w-[96px] h-[97px]
+    }
+   }
 }
