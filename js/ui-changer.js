@@ -1,5 +1,5 @@
 import { findWinner } from "./find-winner.js";
-import { elRefresh, elRobot, elScore, elStatus, elUser } from "./html-elements.js";
+import { elGameZoneInner, elRefresh, elRobot, elScore, elStatus, elUser } from "./html-elements.js";
 import { robotChooser } from "./robot-chooser.js";
 
 elRefresh.addEventListener('click',()=>{
@@ -10,7 +10,7 @@ export function uiChanger(variant) {
   elUser.src = `./img/${variant}.svg`;
 
   setTimeout(() => {
-    const robot = robotChooser();
+    const robot = robotChooser(elGameZoneInner.dataset.mode);
     elRobot.src = `./img/${robot}.svg`;
 
     const winner = findWinner(variant, robot);

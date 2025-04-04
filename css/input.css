@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    div[data-mode="simple"] {
+        background-image: url(../img/triangle.svg);
+    }
+
+    div[data-mode="simple"]>ul {
+        @apply gap-y-6 gap-x-20
+    }
+
+    div[data-mode]>ul {
+        @apply grid-cols-2
+    }
+
+    div[data-mode="simple"]>ul>li:nth-child(3) {
+        @apply col-span-2 place-self-center
+    }
+
+    div[data-mode="simple"]>ul>li:nth-child(4) {
+        @apply hidden
+    }
+
+    div[data-mode="simple"]>ul>li:nth-child(5) {
+        @apply hidden
+    }
+    div[data-mode="simple"]  img{
+      @apply w-[198px] h-[203px]
+    }
+
+
+
+    div[data-mode="advanced"] {
+        background-image: url(../img/polygon.svg);
+    }
+
+    div[data-mode="advanced"]>ul>li:nth-child(1) {
+        grid-column: 1/3;
+        place-self: center;
+        @apply mb-[-55px]
+    }
+
+    div[data-mode="advanced"]>ul>li:nth-child(2) {
+        @apply place-self-start
+    }
+
+    div[data-mode="advanced"]>ul>li:nth-child(3) {
+        @apply place-self-end
+    }
+
+    div[data-mode="advanced"]>ul>li:nth-child(4) {
+        @apply place-self-end
+    }
+
+    div[data-mode="advanced"]>ul>li:nth-child(5) {
+        @apply place-self-start
+    }
+    div[data-mode="advanced"] >ul{
+        @apply gap-y-6 gap-x-20
+    }
+
+    div[data-mode="advanced"]  img{
+        @apply w-[145px] h-[148px]
+      }
+   
+  
+}
