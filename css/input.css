@@ -73,6 +73,9 @@
     div[data-mode="advanced"] img {
         @apply w-[145px] h-[148px];
     }
+    body{
+        @apply pt-12
+    }
 
     @media only screen and (max-width:600px) {
         #status{
@@ -137,6 +140,15 @@
             @apply p-1;
          }
          .title-second{
+            @apply mt-4;
+         }
+         #logo{
+            @apply w-[83px];
+         }
+         body{
+            @apply pt-4;
+         }
+         #status{
             @apply mt-4;
          }
     }

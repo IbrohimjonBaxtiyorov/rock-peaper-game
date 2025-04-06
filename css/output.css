@@ -10043,10 +10043,6 @@ video {
   padding-bottom: 18px;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -10996,6 +10992,10 @@ div[data-mode="advanced"] img {
   width: 145px;
 }
 
+body {
+  padding-top: 3rem;
+}
+
 @media only screen and (max-width:600px) {
   #status{
     font-size: 24px;
@@ -11077,6 +11077,18 @@ div[data-mode="advanced"] img {
   }
 
   .title-second {
+    margin-top: 1rem;
+  }
+
+  #logo {
+    width: 83px;
+  }
+
+  body {
+    padding-top: 1rem;
+  }
+
+  #status {
     margin-top: 1rem;
   }
 }
