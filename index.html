@@ -11,11 +11,11 @@
   >
     <!-- Header-Section -->
 
-    <header
+    <header 
       class="max-w-[700px] mx-auto border-[3px] rounded-2xl border-solid-[#FFFFFF4A] flex justify-between py-[18px] px-6"
     >
-      <img width="155" id="logo" src="img/logo.svg.svg" alt="Game Logo" />
-      <div
+      <img width="155px" id="logo" src="img/logo.svg.svg" alt="Game Logo" />
+      <div id="score-header"
         class="w-[150px] bg-[#F3F3F3] rounded-lg p-4 items-center flex flex-col justify-center"
       >
         <p class="text-[#2A45C2] font-semibold">Score</p>
@@ -26,7 +26,7 @@
     <section id="gamezone">
 
       <div id="gameZoneInner"
-        class="max-w-[476px] w-full mx-auto mt-16 bg-no-repeat bg-center"  data-mode="simple"
+        class="max-w-[476px] w-full  mx-auto mt-16 bg-no-repeat bg-center"  data-mode="simple"
       >
         <ul class="grid " id="css-tringle">
           <li>
@@ -90,7 +90,7 @@
           />
         </div>
 
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-4" id="tiile">
           <strong class="text-[56px]" id="status"></strong>
           <button class="btn btn-neutral" id="refreshGame">Play Again</button>
         </div>
@@ -112,7 +112,7 @@
     <!-- Game rules -->
     
     <div class=" flex flex-col gap-2 absolute right-5 bottom-5"> <button
-      class="btn bg-transparent rounded-lg w-32 border-white"
+      class="btn bg-transparent rounded-lg w-32 border-white "
      id="rules" >
       RULES
     </button>

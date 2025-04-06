@@ -8,7 +8,7 @@
     }
 
     div[data-mode="simple"]>ul {
-        @apply gap-y-6 gap-x-20
+        @apply gap-x-10
     }
 
     div[data-mode]>ul {
@@ -19,6 +19,10 @@
         @apply col-span-2 place-self-center
     }
 
+    div[data-mode="simple"]>ul>li:nth-child(2) {
+        @apply place-self-end
+    }
+
     div[data-mode="simple"]>ul>li:nth-child(4) {
         @apply hidden
     }
@@ -26,9 +30,14 @@
     div[data-mode="simple"]>ul>li:nth-child(5) {
         @apply hidden
     }
-    div[data-mode="simple"]  img{
-      @apply w-[198px] h-[203px]
+
+    div[data-mode="simple"] img {
+        @apply w-[198px] h-[203px]
     }
+
+
+
+
 
 
 
@@ -57,38 +66,60 @@
     div[data-mode="advanced"]>ul>li:nth-child(5) {
         @apply place-self-start
     }
-    div[data-mode="advanced"] >ul{
+
+    div[data-mode="advanced"]>ul {
         @apply gap-y-6 gap-x-20
     }
 
-    div[data-mode="advanced"]  img{
+    div[data-mode="advanced"] img {
         @apply w-[145px] h-[148px]
-      }
-   
-   @media only screen and (max-width:600px){
-    .js-hand{
-        width: 130px;
-        height: 130px;
     }
-    #css-tringle{
-        background-image: url(../img/bg-phone.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+
+    @media only screen and (max-width:600px) {
+        #title {
+            @apply mt-60;
+        }
+
+        .js-hand {
+            width: 130px;
+            height: 130px;
+        }
+
+        #css-tringle {
+            background-image: url(../img/bg-phone.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div[data-mode="simple"]>ul {
+            @apply
+        }
+
+        div[data-mode="simple"] {
+            background-image: none;
+        }
+
+        div[data-mode="simple"]>ul>li:nth-child(1) {
+            @apply place-self-end
+        }
+
+        div[data-mode="simple"]>ul>li:nth-child(3) {
+            @apply mb-2
+        }
+
+        div[data-mode="advanced"]>#css-tringle {
+            background-image: none;
+        }
+
+        div[data-mode="advanced"]>.js-hand {
+            @apply w-[96px] h-[97px]
+        }
+
+        #score-header {
+            @apply h-24
+        }
+
+
     }
-    div[data-mode="simple"] {
-       background-image: none;
-    }
-    div[data-mode="simple"]>ul>li:nth-child(1){
-        @apply place-self-end
-    }
-    div[data-mode="simple"]>ul>li:nth-child(3){
-        @apply mb-10
-    }
-    div[data-mode="advanced"] > #css-tringle{
-       background-image: none;
-    }
-    div[data-mode="advanced"] > .js-hand{
-      @apply w-[96px] h-[97px]
-    }
-   }
+
 }
