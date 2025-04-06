@@ -11,7 +11,7 @@
   >
     <!-- Header-Section -->
 
-    <header 
+    <header  id="header"
       class="max-w-[700px] mx-auto border-[3px] rounded-2xl border-solid-[#FFFFFF4A] flex justify-between py-[18px] px-6"
     >
       <img width="155px" id="logo" src="img/logo.svg.svg" alt="Game Logo" />
@@ -74,33 +74,31 @@
     </section>
 
     <!-- Second game zone -->
-    <section class="hidden" id="secondgamezone">
-      <div
+    <section class="hidden" id="secondgamezone"> 
+      <div id="secondgame"
         class="flex items-center justify-between max-w-[700px] w-full mx-auto mt-[72px]"
       >
         <div class="items-center flex flex-col justify-center">
-          <h2 class="mb-[72px] text-[24px]">YOU PICKED</h2>
+          <h2 class="text-[24px] mb-3">YOU PICKED</h2>
           <img
-            class="duration-300 rounded-full"
-            width="198"
-            height="203"
+            class="duration-300 rounded-full bottom-img"
+           
             src="img/paper.svg"
             id="user"
             alt=""
           />
         </div>
 
-        <div class="flex flex-col items-center gap-4" id="tiile">
-          <strong class="text-[56px]" id="status"></strong>
+        <div class="flex flex-col items-center gap-4">
+          <strong class="text-[54px]" id="status"></strong>
           <button class="btn btn-neutral" id="refreshGame">Play Again</button>
         </div>
 
         <div class="items-center flex flex-col justify-center">
-          <h2 class="mb-[72px] text-[24px]">THE HOUSE PICKED</h2>
+          <h2 class="mb-3 text-[24px] title-second ">THE HOUSE PICKED</h2>
           <img
-            class="duration-300 rounded-full"
-            width="198"
-            height="203"
+            class="duration-300 rounded-full bottom-img"
+            
             src="img/oval.svg"
             id="robot"
             alt=""
